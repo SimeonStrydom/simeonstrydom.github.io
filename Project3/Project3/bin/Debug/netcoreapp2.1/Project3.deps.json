@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "e071b1a7c9d575b1b3d9ba6c9a1be1d9c6701ca2"
+    "signature": "99fa84928c9e405e8b6fd43b8bbe6d9e5f1dbbc6"
   },
   "compilationOptions": {
     "defines": [
@@ -24,15 +24,122 @@
     ".NETCoreApp,Version=v2.1": {
       "Project3/1.0.0": {
         "dependencies": {
+          "Discord.Net": "2.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "Microsoft.NETCore.App": "2.1.0",
+          "SteamWebAPI2": "4.0.0"
         },
         "runtime": {
           "Project3.dll": {}
         },
         "compile": {
           "Project3.dll": {}
+        }
+      },
+      "AutoMapper/5.2.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "NETStandard.Library": "2.0.3",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        }
+      },
+      "Discord.Net/2.0.0": {
+        "dependencies": {
+          "Discord.Net.Commands": "2.0.0",
+          "Discord.Net.Core": "2.0.0",
+          "Discord.Net.Rest": "2.0.0",
+          "Discord.Net.WebSocket": "2.0.0",
+          "Discord.Net.Webhook": "2.0.0"
+        }
+      },
+      "Discord.Net.Commands/2.0.0": {
+        "dependencies": {
+          "Discord.Net.Core": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.Commands.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Discord.Net.Commands.dll": {}
+        }
+      },
+      "Discord.Net.Core/2.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "System.Collections.Immutable": "1.5.0",
+          "System.Interactive.Async": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Discord.Net.Core.dll": {}
+        }
+      },
+      "Discord.Net.Rest/2.0.0": {
+        "dependencies": {
+          "Discord.Net.Core": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.Rest.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Discord.Net.Rest.dll": {}
+        }
+      },
+      "Discord.Net.Webhook/2.0.0": {
+        "dependencies": {
+          "Discord.Net.Core": "2.0.0",
+          "Discord.Net.Rest": "2.0.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Discord.Net.Webhook.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Discord.Net.Webhook.dll": {}
+        }
+      },
+      "Discord.Net.WebSocket/2.0.0": {
+        "dependencies": {
+          "Discord.Net.Core": "2.0.0",
+          "Discord.Net.Rest": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Discord.Net.WebSocket.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Discord.Net.WebSocket.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -205,6 +312,69 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "Steam.Models/3.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Steam.Models.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.0/Steam.Models.dll": {}
+        }
+      },
+      "SteamWebAPI2/4.0.0": {
+        "dependencies": {
+          "AutoMapper": "5.2.0",
+          "Newtonsoft.Json": "11.0.2",
+          "Steam.Models": "3.0.0",
+          "System.Runtime.Serialization.Xml": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SteamWebAPI2.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/SteamWebAPI2.dll": {}
+        }
+      },
+      "System.ComponentModel/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.Primitives/4.1.0": {
+        "dependencies": {
+          "System.ComponentModel": "4.0.1",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.TypeConverter/4.1.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel": "4.0.1",
+          "System.ComponentModel.Primitives": "4.1.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Threading": "4.3.0"
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3155,6 +3325,55 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ulUMmzFg1vAFMpTyJsplgnC7pOIFlb25dbldHd7J4eroQWjSV4iAoOQ33h1oMjf6mLo3uZ8aRNUN2rgpOeSE1w==",
+      "path": "automapper/5.2.0",
+      "hashPath": "automapper.5.2.0.nupkg.sha512"
+    },
+    "Discord.Net/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nW/5FR2+U7IAmHc8F2Kl3e+4WPVqpxXuo7Ydauc8QL0XaobToYCIKvqKyUTCKzXVLECdoZ3RrInsqfqWR3oVHg==",
+      "path": "discord.net/2.0.0",
+      "hashPath": "discord.net.2.0.0.nupkg.sha512"
+    },
+    "Discord.Net.Commands/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zByVTcsElX1fVd0XvUuQBPpfEwr/Mtmi9nfxDbjX/iHu3h0oPzK2TnNmAf7/1d90e4Uo/e7Rjetug9NrJdIcgg==",
+      "path": "discord.net.commands/2.0.0",
+      "hashPath": "discord.net.commands.2.0.0.nupkg.sha512"
+    },
+    "Discord.Net.Core/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HoyRpjt9zhGU+vBRj7DOoiGFcy9rMuTHJ54Sr1yUKtieuOuqbXKVAip3RUZCxhe7Mclh9L00HLrvsr9JaL2A4g==",
+      "path": "discord.net.core/2.0.0",
+      "hashPath": "discord.net.core.2.0.0.nupkg.sha512"
+    },
+    "Discord.Net.Rest/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oREvgm+VPD/w/KkWIsCnunyhCTFLmXap5sZ/l4v8Y7yrz0mHqXAAlKeGzYmWe61C9pvRrXewKwanPCDuDaIK9w==",
+      "path": "discord.net.rest/2.0.0",
+      "hashPath": "discord.net.rest.2.0.0.nupkg.sha512"
+    },
+    "Discord.Net.Webhook/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9N8YGYpT+VcMaImar8zsTU/mAy8vLwMHEL2OlPWqMwu2je3Ckp/1lF2hHxURBb92eqTiZpyM6Ec2rM6xqmcx/g==",
+      "path": "discord.net.webhook/2.0.0",
+      "hashPath": "discord.net.webhook.2.0.0.nupkg.sha512"
+    },
+    "Discord.Net.WebSocket/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FlpLd5udbHD7WUxFUnkSvOa3P4Sfjm7LUIwrd/H2MB06Si0vwzD8pb2P+yMvxVpAoWBkx29+vgiMxok3ncW0Xw==",
+      "path": "discord.net.websocket/2.0.0",
+      "hashPath": "discord.net.websocket.2.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -3210,6 +3429,41 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Steam.Models/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R3ibSEjYkaHCiyJCzlLXFvHCoSeIUJVIeQf/u7dqkd9CQcnuzOGrwEphCv/iaZ96lpp1teU/LfWEyYI5g7i1Tw==",
+      "path": "steam.models/3.0.0",
+      "hashPath": "steam.models.3.0.0.nupkg.sha512"
+    },
+    "SteamWebAPI2/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5NG2TrVQLtYjtUEZMCncsi6314axkXkgmoJGNSB6WxRcCYg7Y2afjshvVvv4kA9oVCCJ2mW14hgItlBCCVTJZg==",
+      "path": "steamwebapi2/4.0.0",
+      "hashPath": "steamwebapi2.4.0.0.nupkg.sha512"
+    },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w==",
+      "path": "system.componentmodel/4.0.1",
+      "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
+    },
+    "System.ComponentModel.Primitives/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sc/7eVCdxPrp3ljpgTKVaQGUXiW05phNWvtv/m2kocXqrUQvTVWKou1Edas2aDjTThLPZOxPYIGNb/HN0QjURg==",
+      "path": "system.componentmodel.primitives/4.1.0",
+      "hashPath": "system.componentmodel.primitives.4.1.0.nupkg.sha512"
+    },
+    "System.ComponentModel.TypeConverter/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MnDAlaeJZy9pdB5ZdOlwdxfpI+LJQ6e0hmH7d2+y2LkiD8DRJynyDYl4Xxf3fWFm7SbEwBZh4elcfzONQLOoQw==",
+      "path": "system.componentmodel.typeconverter/4.1.0",
+      "hashPath": "system.componentmodel.typeconverter.4.1.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
