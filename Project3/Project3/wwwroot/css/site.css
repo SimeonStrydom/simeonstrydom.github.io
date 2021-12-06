@@ -86,9 +86,10 @@ body {
 
     /*Media Query*/
 
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
         .content {
             padding: 8px 32px;
+            font-size:large;
         }
 
         .share-btn-container {
@@ -107,15 +108,16 @@ body {
                 margin: 0 32px;
             }
 
-        /*.discord-widget {
+        .discord-widget {
             right: 0;
             top: unset;
             bottom:50px;
             transform: unset;
-            display: flex;
             flex-direction: row;
-            position: fixed;
-        }*/
+            position: unset;
+            width:100%;
+            opacity:-80;
+        }
     }
 
 .share-btn-contact {
@@ -161,20 +163,33 @@ body {
 
 .discord-widget {
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 100%;
+    transform: translateY(-100%);
     display: flex;
     flex-direction: column;
     position: fixed;
-    width:350px;
-    height:1000px;
 }
 
 .project-container {
     padding:50px;
     margin-top:100px;
+    font-size:large;
 }
 
 .my-img .img-responsive {
     width:inherit;
+}
+
+.table-container {
+    margin:100px;
+}
+
+table {
+    width:100%;
+    font-size:large;
+}
+
+progress {
+    width:100%;
+    height: 80%;
 }
